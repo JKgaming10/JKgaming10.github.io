@@ -10,40 +10,40 @@
     <style>
         body {
             margin: 0;
-            min-height: 100vh;
+            height: 100vh;
             background: linear-gradient(135deg, #00db3a, #00a0d1);
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            color: black;
             font-family: 'Press Start 2P', cursive;
+            color: black;
         }
 
-        header {
-            margin-top: 20px;
+        .container {
             text-align: center;
         }
 
-        header img {
-            max-width: 200px;
+        .container img {
+            max-width: 300px;
+            width: 100%;
             height: auto;
-            display: block;
-            margin: 0 auto 20px auto;
+            margin-bottom: 40px;
         }
 
         h1 {
-            font-size: 20px;
+            font-size: 36px; /* BIG text */
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <!-- Replace "image.png" with your actual image file -->
-        <img src="image.png" alt="JKgaming Logo">
+    <div class="container">
+        <!-- IMAGE FILE MUST EXIST -->
+        <img src="logo.png" alt="JKgaming Logo">
 
         <h1>Welcome to the JKgaming Website</h1>
-    </header>
+    </div>
 
 </body>
 </html>
