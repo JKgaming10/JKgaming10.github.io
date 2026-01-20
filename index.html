@@ -10,41 +10,59 @@
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             background: linear-gradient(135deg, #00db3a, #00a0d1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-family: 'Press Start 2P', cursive;
             color: black;
         }
 
-        .container {
+        .page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .top-image {
             text-align: center;
+            padding-top: 30px;
         }
 
-        .container img {
-            max-width: 300px;
-            width: 100%;
+        .top-image img {
+            width: 250px; /* smaller but still big */
+            max-width: 90%;
             height: auto;
-            margin-bottom: 40px;
         }
 
-        h1 {
-            font-size: 36px; /* BIG text */
+        .center-text {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center-text h1 {
+            font-size: 36px;
             line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- IMAGE FILE MUST EXIST -->
-        <img src="logo.png" alt="JKgaming Logo">
+    <div class="page">
 
-        <h1>Welcome to the JKgaming Website</h1>
+        <!-- TOP IMAGE -->
+        <div class="top-image">
+            <img src="./image%20(1).png" alt="JKgaming Logo">
+        </div>
+
+        <!-- CENTER TEXT -->
+        <div class="center-text">
+            <h1>Welcome to the JKgaming Website</h1>
+        </div>
+
     </div>
 
 </body>
 </html>
-<img src="./logo.png" alt="JKgaming Logo">
