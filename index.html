@@ -58,8 +58,8 @@
             rgba(255,255,255,0.03);
           color: rgba(255,255,255,0.92);
         
-          padding: 10px 16px;
-          border-radius: 999px;
+          padding: 12px 14px;        /* less wide */
+          border-radius: 16px;       /* rounded square */
           font-weight: 700;
           font-size: 0.95rem;
           letter-spacing: 0.2px;
@@ -79,19 +79,13 @@
           content: "";
           position: absolute;
           inset: 0;
-          padding: 1.5px;              /* outline thickness */
+          padding: 1.5px;
           border-radius: inherit;
         
-          background: linear-gradient(
-            90deg,
-            var(--aqua),
-            var(--lime),
-            var(--aqua)
-          );
+          background: linear-gradient(90deg, var(--aqua), var(--lime), var(--aqua));
           background-size: 220% 220%;
           animation: coolBorder 2.2s linear infinite;
         
-          /* makes it a hollow border instead of filling the button */
           -webkit-mask:
             linear-gradient(#000 0 0) content-box,
             linear-gradient(#000 0 0);
@@ -103,14 +97,15 @@
           z-index: 0;
         }
         
-        /* subtle inner glow layer */
+        /* subtle inner glow */
         .cool-btn::after {
           content: "";
           position: absolute;
           inset: 0;
           border-radius: inherit;
-          background: radial-gradient(circle at 30% 20%, rgba(77,255,136,0.12), transparent 55%),
-                      radial-gradient(circle at 70% 80%, rgba(56,249,255,0.10), transparent 55%);
+          background:
+            radial-gradient(circle at 30% 20%, rgba(77,255,136,0.12), transparent 55%),
+            radial-gradient(circle at 70% 80%, rgba(56,249,255,0.10), transparent 55%);
           opacity: 0.8;
           pointer-events: none;
           z-index: 0;
